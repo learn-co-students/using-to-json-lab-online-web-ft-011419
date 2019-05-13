@@ -12,6 +12,7 @@ class ProductsController < ApplicationController
     product = Product.find(params[:id])
     render plain: product.description
   end
+  # this creates a show page that can be and api or reg html
   def show
     @product = Product.find(params[:id])
      respond_to do |format|
